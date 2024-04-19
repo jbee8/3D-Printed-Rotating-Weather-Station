@@ -37,7 +37,6 @@ void updateStepperPosition(JSONVar parsedObject) {
   Serial.println(weatherMain);
 
   if (strcmp(weatherMain, "Clear") == 0 || strcmp(weatherMain, "Hot") == 0) {
-    Serial.println("1st if statement test!");
     if (strcmp(stepperPosition, "Sun") == 0) {
       stepperPosition = "Sun";
       Serial.println(stepperPosition);

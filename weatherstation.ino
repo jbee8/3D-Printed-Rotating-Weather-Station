@@ -36,6 +36,7 @@ void updateStepperPosition(JSONVar parsedObject) {
   Serial.print("The weather condition is: ");
   Serial.println(weatherMain);
 
+  //These are all of the if statements and logic for moving the stepper motor.
   if (strcmp(weatherMain, "Clear") == 0 || strcmp(weatherMain, "Hot") == 0) {
     if (strcmp(stepperPosition, "Sun") == 0) {
       stepperPosition = "Sun";
